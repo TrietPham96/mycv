@@ -991,7 +991,7 @@ u.pulseAlgorithm&&(y=a(y)),m=h.x*y-h.lastX>>0,y=h.y*y-h.lastY>>0,r+=m,c+=y,h.las
 v(l,t,0),f=!0}}function n(t){var n=o(t.target)
 if(!n||t.defaultPrevented)return!0
 var i=t.wheelDeltaX||0,r=t.wheelDeltaY||0
-i||r||(r=t.wheelDelta||0),1.2<Math.abs(i)&&(i*=u.stepSize/120),1.2<Math.abs(r)&&(r*=u.stepSize/120),e(n,-i,-r),t.preventDefault()}function i(t,e){for(var n=t.length;n--;)m[g(t[n])]=e
+i||r||(r=t.wheelDelta||0),1.2<Math.abs(i)&&(i*=u.stepSize/120),1.2<Math.abs(r)&&(r*=u.stepSize/120),e(n,-i,-r)}function i(t,e){for(var n=t.length;n--;)m[g(t[n])]=e
 return e}function o(t){var e=[],n="",o=p.scrollHeight
 do{var r=m[g(t)]
 if(r)return i(e,r)
