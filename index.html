@@ -16,15 +16,47 @@
 </head>
 
 <body class="homepage ver-one" data-spy="scroll" data-target=".main-navigation">
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    <div class="site-navbar-wrap">
+        <div class="site-navbar site-navbar-target js-sticky-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-10">
+                        <nav id="site-navigation" class="site-navigation text-right" role="navigation">
+                            <div class="container">
+                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
+                                        class="site-menu-toggle js-menu-toggle text-white"><span
+                                            class="icon-menu h3"></span></a></div>
+
+                                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                                    <li class="active"><a href="#site-header"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                                    <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+                                    <li><a href="#skills"><i class="fa fa-signal" aria-hidden="true"></i> Skills</a></li>
+                                    <li><a href="#experiences"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Experiences</a></li>
+                                    <li><a href="#education"><i class="fa fa-book" aria-hidden="true"></i> Education</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header id="site-header">
-        <nav id="site-navigation" class="main-navigation side-static" role="navigation">
+        <!-- <nav id="site-navigation" class="main-navigation side-static" role="navigation">
             <div class="navigation-header">
                 <a href="index.html" class="logo"><img src="images/site-logo.png" alt="Signature" class="site-logo"></a>
                 <button class="menu-switch">
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
-            <!-- /.navigation-header -->
             <ul class="nav navigation">
                 <li class="item"><a href="#site-header" class="fa-home">Home</a></li>
                 <li class="item"><a href="#about" class="fa-user">About</a></li>
@@ -32,9 +64,7 @@
                 <li class="item"><a href="#experiences" class="fa-bar-chart-o">Experiences</a></li>
                 <li class="item"><a href="#education" class="fa-book">Education</a></li>
             </ul>
-            <!-- /.navigation -->
-        </nav>
-        <!-- /#site-navigation -->
+        </nav> -->
         <div id="banner" class="transparent-section" data-image="images/header-bg.jpg" data-color="63, 90, 117"
             data-transparency="0.80">
             <div class="transparent-content parallax-style">
@@ -48,17 +78,17 @@
                         <!-- /.site-slogan-->
                         <div class="social-link">
                             <ul class="social-profiles">
-                                <li class="item"><a href="www.linkedin.com/in/trietpham96"
-                                        class="fa-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+                                <li class="item"><a href="www.linkedin.com/in/trietpham96" class="fa-linkedin"
+                                        target="_blank"><span>LinkedIn</span></a></li>
                                 <li class="item"><a href="https://stackoverflow.com/users/12557324/triet-pham"
                                         class="fa-stack-overflow" target="_blank"><span>Stack Overflow</span></a></li>
-                                <li class="item"><a href="https://github.com/TrietPham96"
-                                        class="fa-github" target="_blank"><span>Github</span></a></li>
-                                        <!-- <li class="item"><a href="#" -->
+                                <li class="item"><a href="https://github.com/TrietPham96" class="fa-github"
+                                        target="_blank"><span>Github</span></a></li>
+                                <!-- <li class="item"><a href="#" -->
                                 <!-- <li class="item"><a href="https://www.facebook.com/bang.chu.1272"
                                         class="fa-facebook" target="_blank"><span>Facebook</span></a></li> -->
-                                <li class="item"><a href="https://tritblog.netlify.app/"
-                                    class="fa-globe" target="_blank"><span>My Blog</span></a></li>
+                                <li class="item"><a href="https://tritblog.netlify.app/" class="fa-globe"
+                                        target="_blank"><span>My Blog</span></a></li>
                             </ul>
                         </div>
                         <!-- /.social-link -->
@@ -88,15 +118,20 @@
                     <div class="profile-details section-box">
                         <h2 class="title">Summary</h2>
                         <div class="about-content">
-                            <p>I'm Pham Dinh Triet. A Full Stack Developer & Freelancer with <b>5 years of experience</b> in C#.NET, Angular, VueJS, with knowledge of <i>Front-End (TypeScript, VueJS, Angular), RESTful API, Linq, Systems Architecture and Database Design, Azure DevOps.</i></p>
-                            <p>Coding, learning new languages and technologies is what i am passionate about. I am considered a
+                            <p>I'm Pham Dinh Triet. A Full Stack Developer & Freelancer with <b>5 years of
+                                    experience</b> in C#.NET, Angular, VueJS, with knowledge of <i>Front-End
+                                    (TypeScript, VueJS, Angular), RESTful API, Linq, Systems Architecture and Database
+                                    Design, Azure DevOps.</i></p>
+                            <p>Coding, learning new languages and technologies is what i am passionate about. I am
+                                considered a
                                 team-player because I like to help other and tend to work well within the group.</p>
                             <p>I enjoy coding, reading IT blogs, News and playing games in my free time.</p>
                             <p>My other hobby is gym, soccer and music.</p>
                             <p>My life motto is: No pain no gain</p>
                         </div>
                         <!-- /.about-content -->
-                        <a href="assets/[Full Stack Developer] Pham Dinh Triet.pdf" class="btn fa-download download-btn" target="_blank">My CV</a>
+                        <a href="assets/[Full Stack Developer] Pham Dinh Triet.pdf" class="btn fa-download download-btn"
+                            target="_blank">My CV</a>
                     </div>
                     <!-- /.profile-details -->
                 </div>
@@ -110,7 +145,8 @@
                                 <li class="fa-map-marker">District 8, Ho Chi Minh city</li>
                                 <!-- <li class="fa-map-marker">152 Nguyen Thi Tan, District 8, Ho Chi Minh</li> -->
                                 <li class="fa-phone">0799698143</li>
-                                <li class="fa-envelope"><a href="mailto:trietpham96@gmail.com">trietpham96@gmail.com</a></li>
+                                <li class="fa-envelope"><a href="mailto:trietpham96@gmail.com">trietpham96@gmail.com</a>
+                                </li>
                                 <li class="fa-skype">tycarlos123_2</li>
                                 <!-- <li class="fa-globe"> <a href="https://trietpham96.github.io/mycv/">My CV</a></li> -->
                             </ul>
@@ -177,7 +213,8 @@
                         </ul>
                         <h2 class="box-title">Knowledge & soft skills</h2>
                         <ul>
-                            <li>Understanding about VueJS, AngularJS, KnockoutJS, RESTful API, software design, database design, ...</li>
+                            <li>Understanding about VueJS, AngularJS, KnockoutJS, RESTful API, software design, database
+                                design, ...</li>
                             <li>Understanding about Entity CodeFirst, Linq to Entity, Repository Pattern, ...</li>
                             <li>Business communication, good time management, presentation and teamwork skills ...</li>
                         </ul>
@@ -212,14 +249,20 @@
                         <div class="comments" data-scroll-reveal="enter from the right after .5s">
                             <ul>
                                 <li><span class="bold">Project</span>: DMP Quote</li>
-                                <li><span class="bold">Project Description</span>: Management system of request , quotation for Multimodal Transport services</li>
+                                <li><span class="bold">Project Description</span>: Management system of request ,
+                                    quotation for Multimodal Transport services</li>
                                 <li><span class="bold">Team Size</span>: 10</li>
                                 <li><span class="bold">Responsiblities</span>:
-                                    <p>Responsible for developing software systems for Bollore Logistics Group. Communicate with Paris team and Viet Nam team to confirm requirement of User Story/Task/Bug in Azure DevOps and daily report to Paris Team.</p>
-                                    <p>Design UX/UI and implement the solution (both back-end and front-end) based on the requirements.</p>
+                                    <p>Responsible for developing software systems for Bollore Logistics Group.
+                                        Communicate with Paris team and Viet Nam team to confirm requirement of User
+                                        Story/Task/Bug in Azure DevOps and daily report to Paris Team.</p>
+                                    <p>Design UX/UI and implement the solution (both back-end and front-end) based on
+                                        the requirements.</p>
                                 </li>
-                                <li><span class="bold">Accomplishments</span>: Learned VueJS, KnockoutJS, Design Pattern, new Microsoft technologies(Azure DevOps). Improved English, teamwork and communication skills.</li>
-                                <li><span class="bold">Technologies</span>: 
+                                <li><span class="bold">Accomplishments</span>: Learned VueJS, KnockoutJS, Design
+                                    Pattern, new Microsoft technologies(Azure DevOps). Improved English, teamwork and
+                                    communication skills.</li>
+                                <li><span class="bold">Technologies</span>:
                                     <p>Front-end: VueJS, KnockoutJS, TypeScript, Bootstrap</p>
                                     <p>Back-end: C#.NET MVC, SQL</p>
                                     <p>Tools: Azure DevOps, App Insights</p>
@@ -246,19 +289,23 @@
                             <ul>
                                 <li><span class="bold">Project</span>: BestGear Transportation Management</li>
                                 <li><span class="bold">Project Description</span>: Logistics software for container
-                                    management <a href="http://www.bestgear-series.com/" target="_blank">(Website)</a></li>
+                                    management <a href="http://www.bestgear-series.com/" target="_blank">(Website)</a>
+                                </li>
                                 <li><span class="bold">Team Size</span>: 10</li>
                                 <li><span class="bold">Responsiblities</span>:
                                     <p>Communicate with customers and teammates to clarify requirement. Design UX/UI and
-                                        implement the solution (both back-end and front-end) based on the requirements.</p>
+                                        implement the solution (both back-end and front-end) based on the requirements.
+                                    </p>
                                     <p>Deploy to server and monitor system stability.</p>
                                     <p>Division of tasks, mentoring and do code reviews for other team members.</p>
                                 </li>
-                                <li><span class="bold">Accomplishments</span>: Learned Design Pattern, new Microsoft technologies and
+                                <li><span class="bold">Accomplishments</span>: Learned Design Pattern, new Microsoft
+                                    technologies and
                                     frameworks. Improved teamwork and communication skills.</li>
-                                <li><span class="bold">Technologies</span>: 
+                                <li><span class="bold">Technologies</span>:
                                     <p>Front-end: Angular, GulpJS, Bootstrap</p>
-                                    <p>Back-end: C#.NET, Web API, Linq, Entity Framework CodeFirst, SQL, Crystal Report.</p>
+                                    <p>Back-end: C#.NET, Web API, Linq, Entity Framework CodeFirst, SQL, Crystal Report.
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -287,16 +334,21 @@
                                     <p><a href="https://phumyhung.vn/midtown/" target="_blank">Phumyhung Midtown</a></p>
                                 </li>
                                 <li><span class="bold">Team Size</span>: 5</li>
-                                <li><span class="bold">Responsiblities</span>: 
-                                    <p>Graduation internship and become a full time employee, participating in the company's web projects.</p>
-                                    <p>Design database, front-end and back-end programming of web mobile projects and deploy server, develop and fix the application’s defect base on requirement, prepare
-                                        document and technical guide for developers joining in the middle of the project.</p>
+                                <li><span class="bold">Responsiblities</span>:
+                                    <p>Graduation internship and become a full time employee, participating in the
+                                        company's web projects.</p>
+                                    <p>Design database, front-end and back-end programming of web mobile projects and
+                                        deploy server, develop and fix the application’s defect base on requirement,
+                                        prepare
+                                        document and technical guide for developers joining in the middle of the
+                                        project.</p>
                                     <p>Write key technical documents and mentor new members of the team.</p>
                                     <p>Collaborate with team leader to define and improve the team’s workflow.</p>
                                 </li>
                                 <li><span class="bold">Accomplishments</span>: Learned web technologies and
                                     frameworks. Improved teamwork and communication skills.</li>
-                                <li><span class="bold">Technologies</span>: PHP, ASP.NET WebForm, Linq, Entity Framework, Bootstrap, Jquery.</li>
+                                <li><span class="bold">Technologies</span>: PHP, ASP.NET WebForm, Linq, Entity
+                                    Framework, Bootstrap, Jquery.</li>
                             </ul>
                         </div>
                         <!-- /.comments -->
@@ -307,25 +359,37 @@
                         </div>
                         <div class="comments" data-scroll-reveal="enter from the right after .5s">
                             <ul>
-                                <li><span class="bold"><a href="https://trietpham96.gitlab.io/simpledemovuejs" target="_blank">Demo VueJS 1 - Vuetify + Express</a></span>
+                                <li><span class="bold"><a href="https://trietpham96.gitlab.io/simpledemovuejs"
+                                            target="_blank">Demo VueJS 1 - Vuetify + Express</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://muamuamua.herokuapp.com/" target="_blank">Demo VueJS 2 - Vuetify + Express</a></span>
+                                <li><span class="bold"><a href="https://muamuamua.herokuapp.com/" target="_blank">Demo
+                                            VueJS 2 - Vuetify + Express</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://bachhoant.com/" target="_blank">Demo Ecommerce - NuxtJS + API Commerce.js</a></span>
+                                <li><span class="bold"><a href="https://muamuamua.netlify.app/" target="_blank">Demo Ecommerce -
+                                            NuxtJS + API Commerce.js</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://jovial-kare-358b4a.netlify.app/" target="_blank">Demo Ecommerce - NuxtJS + API Commerce.js</a></span>
+                                <li><span class="bold"><a href="https://jovial-kare-358b4a.netlify.app/"
+                                            target="_blank">Demo Ecommerce - NuxtJS + API Commerce.js</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://jovial-kare-358b4a.netlify.app/" target="_blank">Demo Ecommerce with Nuxt + CommerceJS</a></span>
+                                <li><span class="bold"><a href="https://jovial-kare-358b4a.netlify.app/"
+                                            target="_blank">Demo Ecommerce with Nuxt + CommerceJS</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://pes13neverdie.netlify.app/" target="_blank">pes13neverdie - A project using Nuxt Vuetify + Firebase</a></span>
+                                <li><span class="bold"><a href="https://pes13neverdie.netlify.app/"
+                                            target="_blank">pes13neverdie - A project using Nuxt Vuetify +
+                                            Firebase</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://demonuxtfirebase.netlify.app/" target="_blank">demonuxtjsfirebase - Demo CRUD App using Nuxt + Firebase</a></span>
+                                <li><span class="bold"><a href="https://demonuxtfirebase.netlify.app/"
+                                            target="_blank">demonuxtjsfirebase - Demo CRUD App using Nuxt +
+                                            Firebase</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://tritblog.netlify.app/" target="_blank">Trit blog</a></span>
+                                <li><span class="bold"><a href="https://tritblog.netlify.app/" target="_blank">Trit
+                                            blog</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://cinehot.vercel.app/" target="_blank">Cinehot - This is a movie project i build in free time</a></span>
+                                <li><span class="bold"><a href="https://cinehot.vercel.app/" target="_blank">Cinehot -
+                                            This is a movie project i build in free time</a></span>
                                 </li>
-                                <li><span class="bold"><a href="https://hotpoker.vercel.app/" target="_blank">hotPoker - A Simple App for Planning Poker for your team</a></span>
+                                <li><span class="bold"><a href="https://hotpoker.vercel.app/" target="_blank">hotPoker -
+                                            A Simple App for Planning Poker for your team</a></span>
                                 </li>
                             </ul>
                         </div>
@@ -351,7 +415,8 @@
                             <div class="edu-time light-green">
                                 <p>2014
                                     <br /> -
-                                    <br /> 2017</p>
+                                    <br /> 2017
+                                </p>
                             </div>
                             <!-- /.edu-time -->
                             <div class="edu-title">
@@ -375,6 +440,8 @@
         <!-- /.container -->
     </section>
     <script defer="defer" async="async" src="script.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 
